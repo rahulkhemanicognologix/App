@@ -10,13 +10,13 @@ public class Insert {
         String password = "";
         String query = "INSERT INTO Marks (student_id, first_name, last_name, result) VALUES (?, ?, ?, ?)";
 
-        Class.forName("com.mysql.jdbc.Driver");
+      //  Class.forName("com.mysql.jdbc.Driver");
         Connection con = DriverManager.getConnection(url,username,password);
 
         PreparedStatement statement = con.prepareStatement(query);
-        statement.setString(1, "7");
+        statement.setString(1, "9");
         statement.setString(2, "MS");
-        statement.setString(3, "Dhoni");
+        statement.setString(3, "Dhoi");
         statement.setString(4, "PASS");
 
         int rowsInserted = statement.executeUpdate();

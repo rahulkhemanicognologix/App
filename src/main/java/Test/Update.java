@@ -10,7 +10,7 @@ public class Update {
         String password = "";
         String query = " Update Marks SET student_id=?, result=? WHERE last_name = ?";
 
-        Class.forName("com.mysql.jdbc.Driver");
+     //    Class.forName("com.mysql.jdbc.Driver");
         Connection con = DriverManager.getConnection(url, username, password);
 
         PreparedStatement statement = con.prepareStatement(query);

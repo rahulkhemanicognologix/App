@@ -9,7 +9,7 @@ public class Delete {
         String username = "root";
         String password = "";
         String query = " Delete from MARKS where student_id = ?";
-        Class.forName("com.mysql.jdbc.Driver");
+     //   Class.forName("com.mysql.jdbc.Driver");
         Connection con = DriverManager.getConnection(url, username, password);
 
         PreparedStatement statement = con.prepareStatement(query);

@@ -9,7 +9,7 @@ public class Demo {
         String password = "";
         String query = " SELECT `student_id`, `first_name`, `last_name` , `result` FROM `Marks` WHERE `result` = 'Pass'";
 
-        Class.forName("com.mysql.jdbc.Driver");
+      //  Class.forName("com.mysql.jdbc.Driver");
         Connection con = DriverManager.getConnection(url,username,password);
 
         Statement st = con.createStatement();
